@@ -1,0 +1,84 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="https://devaau.automationanywhere.com/templates/protostar/css/global.css?77cad33fb6afe4b7f3d4d3418ff0d3a1" rel="stylesheet" />
+<link href="https://devaau.automationanywhere.com/templates/protostar/css/client.css?77cad33fb6afe4b7f3d4d3418ff0d3a1" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+    .socialbox{
+        margin-top:-21px;
+    }
+    .main-menu.navbar-default{
+        height:156px !important;
+    }
+
+</style>
+<script src="https://devaau.automationanywhere.com/templates/protostar/js/main.js"></script>
+
+<header id="page-header-wrapper" style='background-position: 0px 0px; background-repeat: no-repeat; background-size: cover;'>
+    <nav class="navbar navbar-default main-menu">
+        <div class="menu-top">
+            <!--<div class="container-wrap">
+                  <ul class="nav navbar-nav navbar-right">
+                  <li><a data-toggle="modal" data-target="#loginmodal" href="#" >Login</a></li>
+                  <li><a data-toggle="modal" data-target="#regmodal" href="#" >Get Certified</a></li>
+                  <li><a href="/contact-us">Contact Us</a></li>
+                </ul>
+            </div>-->
+        </div>
+        <div class="container-wrap">
+            <div class="navbar-header nav-head">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-menu">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-logo" href="/"></a>
+            </div>
+            <div class="collapse navbar-collapse nav-menu" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/courses" >Courses</a></li>
+                    <li><a href="/about" >About</a></li>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse pull-right" id="profile-nav-collapse" >
+                <ul class="nav navbar-nav navbar-right" style="margin-right:20px;vertical-align:middle;margin-top:-56px;">
+
+                    <li id="user_dropdown" class="dropdown">
+                        <a href="#mainCol" class="skip" tabindex="0">Skip navigation</a>
+                        <a href="#" id="profileIcon" tabindex="0" class="dropdown-toggle" data-toggle="dropdown" title="User profile picture - Click to open menu dropdown list">
+                            <img id="user_dropdown" border="0" src="/admin/people/7372075/avatar" alt="Profile Dropdown Menu" class="img-circle" style="width:35px;height:35px;">
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a  href="#" style="color:Black;text-align:left;"><div class="icon-profile"></div>{{Profile.UserName}}</a></li>
+                            <li style="color:Black;" class="divider"></li>
+
+                            <li id="user_drop">{{SwitchView}}</li>
+
+                            <li style="color:Black;" class="divider"></li>
+                            <!--
+                                        <li><a href="/account/UniversitySSO" target="_blank" style="color:Black; text-align:left;"><i class="fa fa-bookmark" aria-hidden="true" style="color: #262626;font-size: 20px;margin: 0 9px 0 4px;"></i>Litmos Dojo</a></li>
+                                         -->
+                            <li><a href="/account" style="color:Black; text-align:left;"><div class="icon-settings"></div>My Profile &amp; Settings</a></li>
+                            <li><a href="/account/logout" style="color:Black; text-align:left;"><div class="icon-signout"></div>Sign-Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="socialbox pull-right">
+                <div class="socialbox">
+                    <a title="Facebook" href="//www.facebook.com/AutomationAnywhereSoftware" target="_blank">
+                        <i class="fa fa-facebook-square" style="font-size:24px"></i></a><a title="Twitter" href="//twitter.com/AutomationAnywh" target="_blank">
+                    <i class="fa fa-twitter-square" style="font-size:24px"></i></a><a title="Google" href="//plus.google.com/+Automationanywhere" target="_blank">
+                    <i class="fa fa-google-plus-square" style="font-size:24px"></i></a><a title="Linkedin" href="//www.linkedin.com/company/automation-anywhere" target="_blank">
+                    <i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+                </div> </div>
+        </div>
+        <input type="hidden" id="score_hidden" value="0" />
+        <input type="hidden" id="profile_id" value="{{Profile.UserName}}" />
+    </nav>
+</header>
